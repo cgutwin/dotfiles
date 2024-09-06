@@ -1,5 +1,8 @@
 if status is-interactive
 	# Commands to run in interactive sessions can go here
+
+	# abbreviations
+	abbr -a gs git status
 	
 	fish_add_path /opt/homebrew/bin						# include items from homebrew installs
 	set -gx EDITOR "vim"							# set the default editor
