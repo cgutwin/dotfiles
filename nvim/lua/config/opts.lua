@@ -6,3 +6,7 @@ vim.g.maplocalleader = "\\"
 opt.clipboard = vim.env.SSH_TTY and "" or "unnamedplus" -- Sync with system clipboard
 opt.cursorline = true -- Enable highlighting of the current line
 opt.expandtab = true -- Use spaces instead of tabs
+opt.termguicolors = true
+
+vim.wo.number = true
+vim.wo.relativenumber = true
