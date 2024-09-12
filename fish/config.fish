@@ -9,5 +9,7 @@ if status is-interactive
 
 	set -x LS_COLORS (vivid generate rose-pine)				# set LS_COLORS env for fd
 	fzf_configure_bindings --directory=\cf 					# configures bindings for fzf
-	set fzf_directory_opts --bind "ctrl-o:execute($EDITOR {} &> /dev/tty)"	# binds ctrl-o to open using the default editor
+        set fzf_directory_opts --bind "ctrl-o:execute($EDITOR {} &> /dev/tty)"	# binds ctrl-o to open using the default editor
+
+        pyenv init - | source
 end
